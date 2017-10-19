@@ -42,11 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpenClosedPrinciple\BetterFilter.cs" />
+    <Compile Include="OpenClosedPrinciple\ColorSpecification.cs" />
+    <Compile Include="OpenClosedPrinciple\IFilter.cs" />
+    <Compile Include="OpenClosedPrinciple\ISpecification.cs" />
+    <Compile Include="OpenClosedPrinciple\MultipleSpecification.cs" />
+    <Compile Include="OpenClosedPrinciple\Product.cs" />
+    <Compile Include="OpenClosedPrinciple\ProductFilter.cs" />
+    <Compile Include="OpenClosedPrinciple\SizeSpecification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingleResponsibilityPriniciple\Journal.cs" />
+    <Compile Include="SingleResponsibilityPriniciple\Persistence.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
