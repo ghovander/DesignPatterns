@@ -12,8 +12,10 @@ namespace DesignPatterns.OpenClosedPrinciple
 
         internal MultipleSpecification(ISpecification<T> first, ISpecification<T> second)
         {
-            this._first = first ?? throw new ArgumentNullException();
-            this._second = second ?? throw new ArgumentNullException();
+            this._first = first;
+            this._second = second;
+
+            if (this._first == null || this._second == null) throw new ArgumentNullException();
         }
 
         public bool IsSatisfied(T t)

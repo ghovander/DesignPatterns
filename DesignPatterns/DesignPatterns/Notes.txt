@@ -1,2 +1,0 @@
-﻿Lecture 2: SOLID Design Principles
-- Introduced by Robert C. Martin

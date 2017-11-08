@@ -1,4 +1,5 @@
-﻿using DesignPatterns.OpenClosedPrinciple;
+﻿using DesignPatterns.LiskovSubstitutionPrinciple;
+using DesignPatterns.OpenClosedPrinciple;
 using DesignPatterns.SingleResponsibilityPriniciple;
 using System;
 using System.Collections.Generic;
@@ -13,6 +14,7 @@ namespace DesignPatterns
     {
         static void Main(string[] args)
         {
+            LiskovSubstitutionPrinciple();
             Console.ReadLine();
         }
 
@@ -63,6 +65,25 @@ namespace DesignPatterns
             {
                 Console.WriteLine($" - {p.Name} is big and blue");
             }
+        }
+        /// <summary>
+        /// Liskov Substitution Principle: Parent types can be instantiated with subclasses and should work with the subclass behavior
+        /// </summary>
+        private static void LiskovSubstitutionPrinciple()
+        {
+            var rectangle = new Rectangle(2, 3);
+            Console.WriteLine($"{rectangle} has area {Calculations.Area(rectangle)}");
+
+            Rectangle square = new Square();
+            square.Width = 4;
+            Console.WriteLine($"{square} has area {Calculations.Area(square)}");
+        }
+        /// <summary>
+        /// Interface Segregation Principle: Keep interfaces small such that that do not have so much responsibility. It is better to create an interface that inherits from the smaller interfaces.
+        /// </summary>
+        private static void InterfaceSegregationPrinciple()
+        {
+
         }
     }
 }

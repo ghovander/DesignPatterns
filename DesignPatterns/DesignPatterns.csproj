@@ -42,6 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InterfaceSegregationPriniciple\Document.cs" />
+    <Compile Include="InterfaceSegregationPriniciple\IMultiFunctionDevice.cs" />
+    <Compile Include="InterfaceSegregationPriniciple\IPrinter.cs" />
+    <Compile Include="InterfaceSegregationPriniciple\IScanner.cs" />
+    <Compile Include="InterfaceSegregationPriniciple\MultiFunctionMachine.cs" />
+    <Compile Include="InterfaceSegregationPriniciple\Photocopier.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Calculations.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Rectangle.cs" />
+    <Compile Include="LiskovSubstitutionPrinciple\Square.cs" />
     <Compile Include="OpenClosedPrinciple\BetterFilter.cs" />
     <Compile Include="OpenClosedPrinciple\ColorSpecification.cs" />
     <Compile Include="OpenClosedPrinciple\IFilter.cs" />
@@ -61,5 +70,6 @@
   <ItemGroup>
     <Content Include="Notes.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
